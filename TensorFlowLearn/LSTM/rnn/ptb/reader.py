@@ -42,8 +42,12 @@ def _build_vocab(filename):
 
   return word_to_id
 
-
+# iii = 0
 def _file_to_word_ids(filename, word_to_id):
+  # print(word_to_id)
+  # global iii
+  # print(iii)
+  # iii+=1
   data = _read_words(filename)
   return [word_to_id[word] for word in data if word in word_to_id]
 
@@ -70,7 +74,9 @@ def ptb_raw_data(data_path=None):
   train_path = os.path.join(data_path, "ptb.train.txt")
   valid_path = os.path.join(data_path, "ptb.valid.txt")
   test_path = os.path.join(data_path, "ptb.test.txt")
-
+  # print(train_path)
+  # print(valid_path)
+  # print(test_path)
   word_to_id = _build_vocab(train_path)
   train_data = _file_to_word_ids(train_path, word_to_id)
   valid_data = _file_to_word_ids(valid_path, word_to_id)

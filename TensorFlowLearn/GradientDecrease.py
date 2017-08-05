@@ -30,15 +30,15 @@ for iter in xrange(10000):
 
     # how much did we miss?
     l1_error = y - l1
-
+    # l1_error = y * np.log(l1)
+    if(iter%1000 == 0):
+    	print(str(np.mean(np.abs(l1_error))))
     # multiply how much we missed by the 
     # slope of the sigmoid at the values in l1
     l1_delta = l1_error * nonlin(l1,True)
 
     # update weights
     syn0 += np.dot(l0.T,l1_delta)
-    if(iter%1000 == 0):
-		print(syn0)
 
 
 print "Output After Training:"

@@ -32,7 +32,7 @@ class PtbReaderTest(tf.test.TestCase):
     self._string_data = "\n".join(
         [" hello there i am",
          " rain as day",
-         " want some cheesy puffs ?"])
+         " want some cheesy puffs ?","OYZH"])
 
   def testPtbRawData(self):
     tmpdir = tf.test.get_temp_dir()
@@ -41,8 +41,12 @@ class PtbReaderTest(tf.test.TestCase):
       with tf.gfile.GFile(filename, "w") as fh:
         fh.write(self._string_data)
     # Smoke test
-    output = reader.ptb_raw_data(tmpdir)
-    self.assertEqual(len(output), 4)
+    output,output2,output3,output4 = reader.ptb_raw_data(tmpdir)
+    print(output)
+    print(output2)
+    print(output3)
+    print(output4)
+    # self.assertEqual(len(output), 4)
 
   def testPtbProducer(self):
     raw_data = [4, 3, 2, 1, 0, 5, 6, 1, 1, 1, 1, 0, 3, 4, 1]
@@ -55,10 +59,15 @@ class PtbReaderTest(tf.test.TestCase):
       try:
         xval, yval = session.run([x, y])
         self.assertAllEqual(xval, [[4, 3], [5, 6], [1, 0]])
+        # print("xval: ", xval)
+        # print(11111111111)
+        # print("yval: ", yval)
+        # print(11111111111)
         self.assertAllEqual(yval, [[3, 2], [6, 1], [0, 3]])
         xval, yval = session.run([x, y])
         self.assertAllEqual(xval, [[2, 1], [1, 1], [3, 4]])
         self.assertAllEqual(yval, [[1, 0], [1, 1], [4, 1]])
+        
       finally:
         coord.request_stop()
         coord.join()
