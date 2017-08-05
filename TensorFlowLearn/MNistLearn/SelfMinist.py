@@ -12,6 +12,8 @@ y = tf.nn.softmax(evidence)
 
 y_ = tf.placeholder(tf.float32,[None,10])
 cross_entropy = tf.reduce_mean(-tf.reduce_sum( (y_ * tf.log(y)), reduction_indices=1) )
+
+
 train_step = tf.train.GradientDescentOptimizer(0.05).minimize(cross_entropy)
 
 sess = tf.InteractiveSession()
