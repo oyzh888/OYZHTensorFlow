@@ -1,26 +1,20 @@
-from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
+# import tensorflow as tf
+#
+# n_steps = 10
+# sess = tf.Session()
+#
+# arr = tf.constant([[1,2,3],[4,5,6]])
+# res = tf.unstack(arr, axis = 1)
+# sess.run(res)
+
 import tensorflow as tf
-x = tf.placeholder(tf.float32, [None, 784])
-W = tf.Variable(tf.zeros([784, 10]))
-b = tf.Variable(tf.zeros([10]))
-y = tf.nn.softmax(tf.matmul(x, W) + b)
-
-y_ = tf.placeholder(tf.float32, [None, 10])
-
-cross_entropy = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
-
-train_step = tf.train.GradientDescentOptimizer(0.05).minimize(cross_entropy)
-sess = tf.InteractiveSession()
-tf.global_variables_initializer().run()
-for _ in range(1000):
-    batch_xs, batch_ys = mnist.train.next_batch(100)
-    # print ( sess.run(y_, feed_dict={y_: batch_ys}) )
-    sess.run(train_step, {x:batch_xs, y_:batch_ys})
-
-correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
-accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
-print(sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
-
-def hello():
-    print (123)
+a = tf.constant([1,2,3])
+b = tf.constant([4,5,6])
+c = tf.stack([a,b],axis=1)
+d = tf.unstack(c,3,axis=0)
+e = tf.unstack(c,2,axis=1)
+print(c.get_shape())
+with tf.Session() as sess:
+    print(sess.run(c))
+    print(sess.run(d))
+    print(sess.run(e))

@@ -2,98 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1612865-2b7f-4874-a02a-91822d927a21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper/BLSTM_ISMIR16_FINAL.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper/Benetos An RNN-based Music Language 2014 Accepted (1).pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MINIST_data/t10k-images-idx3-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MINIST_data/t10k-labels-idx1-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MINIST_data/train-images-idx3-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MINIST_data/train-labels-idx1-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MNIST_data/t10k-images-idx3-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MNIST_data/t10k-labels-idx1-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MNIST_data/train-images-idx3-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MNIST_data/train-labels-idx1-ubyte.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/OYZHTensorFlow.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/RNNLearn.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/T2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/helper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/seq2seqWithComment.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/seq2seqWithNoComment.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/rnn/ptb/My.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_1/.ipynb_checkpoints/Chapter_1.1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_1/.ipynb_checkpoints/Chapter_1.4-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_1/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_1/Chapter_1.1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_1/Chapter_1.4.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_1/Untitled.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.1.1-checkpoint(1).ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.1.1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.1.2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.1.3-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.1.4-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.1.5-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.1.6-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.1.2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.2.1.1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/.ipynb_checkpoints/Chapter_2.2.2.1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.1.1.1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.1.1.2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.1.1.3.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.1.1.4.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.1.1.5.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.1.1.6.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.1.2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.2.1.1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_2/Chapter_2.2.2.1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.1.1.1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.1.1.2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.1.2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.1.4.1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.1.4.2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.2.1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.2.2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.2.3-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/.ipynb_checkpoints/Chapter_3.2.4-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.1.1.1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.1.1.2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.1.2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.1.4.1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.1.4.2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.2.1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.2.2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.2.3.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/Chapter_3.2.4.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_3/MLLab_install.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_4/.ipynb_checkpoints/Chapter_4.2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_4/.ipynb_checkpoints/Chapter_4.3-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_4/.ipynb_checkpoints/Chapter_4.4-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_4/Chapter_4.2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_4/Chapter_4.3.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter_4/Chapter_4.4.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TensorFlowLearn/LSTM/RNNLearn.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TensorFlowLearn/LSTM/T2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TensorFlowLearn/LSTM/helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TensorFlowLearn/LSTM/raw_rnn.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TensorFlowLearn/Minist.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper/11539-51149-1-PB.pdf" afterPath="$PROJECT_DIR$/Paper/FInished/11539-51149-1-PB.pdf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper/Pop Music Generation.pdf" afterPath="$PROJECT_DIR$/Paper/FInished/Pop Music Generation.pdf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper/Stanford Deep Learning for Music.pdf" afterPath="$PROJECT_DIR$/Paper/FInished/Stanford Deep Learning for Music.pdf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/TensorFlowLearn/LSTM/RNNSimple.py" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/RNNSimple.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Py.py" afterPath="$PROJECT_DIR$/Py.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TensorFlowLearn/LSTM/rnn/ptb/reader.py" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/rnn/ptb/reader.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RowRNN.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMNist_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMnist.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/OYZHTensorFlow.iml" afterPath="$PROJECT_DIR$/.idea/OYZHTensorFlow.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py" afterPath="$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/SelfMinist.py" afterPath="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/SelfMinist.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TensorFlowLearn/Test.py" afterPath="$PROJECT_DIR$/TensorFlowLearn/Test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TensorFlowLearn/tf.contrib.learn Quickstart.py" afterPath="$PROJECT_DIR$/TensorFlowLearn/tf.contrib.learn Quickstart.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TensorFlowTry.ipynb" afterPath="$PROJECT_DIR$/TensorFlowTry.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tf.py" afterPath="$PROJECT_DIR$/Tf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Untitled.ipynb" afterPath="$PROJECT_DIR$/Untitled.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,7 +28,7 @@
       <file leaf-file-name="RNNLearn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/RNNLearn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
+            <state relative-caret-position="0">
               <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding />
             </state>
@@ -120,28 +38,8 @@
       <file leaf-file-name="Test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TensorFlowLearn/Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seq2seqWithNoComment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/seq2seqWithNoComment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="T2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/T2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="-375">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -149,31 +47,83 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Py.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Py.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tensorflow/python/ops/array_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="914" column="4" lean-forward="false" selection-start-line="914" selection-start-column="4" selection-end-line="914" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RNNMNist_2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMNist_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <folding>
+                <element signature="e#365#402#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ops.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tensorflow/python/framework/ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="1227" column="0" lean-forward="false" selection-start-line="1227" selection-start-column="0" selection-end-line="1227" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RowRNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RowRNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RNN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="371">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MnistExpert.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MnistExpert.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="11" />
+            <state relative-caret-position="221">
+              <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -190,11 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sys</find>
-      <find>placeholder_inputs</find>
-      <find>ing(loss, learn</find>
-      <find>input_data.read_data_sets(FLAGS.train_dir, FLAGS.fake_data)</find>
-      <find>weights</find>
       <find>inference</find>
       <find>hidden1</find>
       <find>x = tf.placeholder(tf.float32, [None, 784])</find>
@@ -220,6 +165,11 @@
       <find>print</find>
       <find>reduction_indices</find>
       <find>encoder_fw_output</find>
+      <find>BasicLSTMCell</find>
+      <find>Split</find>
+      <find>weights</find>
+      <find>sess</find>
+      <find>n_hidden</find>
     </findStrings>
     <replaceStrings>
       <replace>mnist</replace>
@@ -236,11 +186,9 @@
         <option value="$PROJECT_DIR$/TensorFlowLearn/Minist.py" />
         <option value="$PROJECT_DIR$/Minist.py" />
         <option value="$PROJECT_DIR$/TensorFlowLearn/SelfMinist.py" />
-        <option value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py" />
         <option value="$PROJECT_DIR$/TensorFlowLearn/Mechanics 101.py" />
         <option value="$PROJECT_DIR$/TensorFlowLearn/mnist_with_summaries.py" />
         <option value="$PROJECT_DIR$/Untitled.ipynb" />
-        <option value="$PROJECT_DIR$/Tf.py" />
         <option value="$PROJECT_DIR$/models/tutorials/rnn/ptb/reader.py" />
         <option value="$PROJECT_DIR$/TensorFlowLearn/LSTM/helper.py" />
         <option value="$PROJECT_DIR$/TensorFlowLearn/LSTM/T1.py" />
@@ -257,16 +205,21 @@
         <option value="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/seq2seqWithNoComment.py" />
         <option value="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/T2.py" />
         <option value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/SelfMinist.py" />
-        <option value="$PROJECT_DIR$/TensorFlowLearn/Test.py" />
-        <option value="$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py" />
         <option value="$PROJECT_DIR$/.gitignore.txt" />
+        <option value="$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RowRNN.py" />
+        <option value="$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py" />
+        <option value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py" />
+        <option value="$PROJECT_DIR$/TensorFlowLearn/Test.py" />
+        <option value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMnist.py" />
+        <option value="$PROJECT_DIR$/Tf.py" />
+        <option value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMNist_2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="376" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="19" />
     <option name="y" value="23" />
-    <option name="width" value="1509" />
+    <option name="width" value="1369" />
     <option name="height" value="812" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -314,6 +267,30 @@
               <item name="OYZHTensorFlow" type="b2602c69:ProjectViewProjectNode" />
               <item name="OYZHTensorFlow" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="OYZHTensorFlow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OYZHTensorFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="TensorFlowLearn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OYZHTensorFlow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OYZHTensorFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="TensorFlowLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="LSTM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OYZHTensorFlow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OYZHTensorFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="TensorFlowLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="LSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="Try" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OYZHTensorFlow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OYZHTensorFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="TensorFlowLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="MNistLearn" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -344,8 +321,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test">
-    <configuration name="Minist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.MnistExpert">
+    <configuration name="MnistExpert" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -357,12 +334,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OYZHTensorFlow" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/Minist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="SelfMinist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="RNNMNist_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -374,24 +351,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OYZHTensorFlow" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/SelfMinist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMNist_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="T2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="RNNMnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OYZHTensorFlow" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/T2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -409,6 +386,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OYZHTensorFlow" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Tf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OYZHTensorFlow" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -478,37 +472,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="raw_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TensorFlowLearn/LSTM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OYZHTensorFlow" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlowLearn/LSTM/raw_rnn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.raw_rnn" />
-      <item index="1" class="java.lang.String" itemvalue="Python.T2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Minist" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SelfMinist" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.RNNMnist" />
+      <item index="2" class="java.lang.String" itemvalue="Python.MnistExpert" />
+      <item index="3" class="java.lang.String" itemvalue="Python.RNNMNist_2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Tf" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SelfMinist" />
-        <item index="2" class="java.lang.String" itemvalue="Python.T2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Minist" />
-        <item index="4" class="java.lang.String" itemvalue="Python.raw_rnn" />
+        <item index="0" class="java.lang.String" itemvalue="Python.MnistExpert" />
+        <item index="1" class="java.lang.String" itemvalue="Python.RNNMNist_2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Tf" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.RNNMnist" />
       </list>
     </recent_temporary>
   </component>
@@ -564,20 +541,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <frame x="19" y="23" width="1369" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2534722" sideWeight="0.49415693" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22279036" sideWeight="0.49415693" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819906" sideWeight="0.5021565" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31019038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30945945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3243243" sideWeight="0.4978435" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243243" sideWeight="0.4978435" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24755502" sideWeight="0.50584304" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14024836" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -597,30 +574,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TensorFlowTry.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python35/Lib/site-packages/tensorflow/python/ops/random_ops.py" />
-    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/Mechanics 101.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/fully_connected_feed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python35/Lib/site-packages/tensorflow/examples/tutorials/mnist/mnist.py" />
-    <entry file="file://D:/Python35/Lib/site-packages/tensorflow/python/ops/variables.py" />
     <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MinistModuel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="940">
@@ -680,20 +633,6 @@
     <entry file="file://D:/Python35/Lib/site-packages/numpy/random/__init__.py" />
     <entry file="file://D:/Python35/Lib/site-packages/numpy/core/numeric.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/943167800/numpy/random/mtrand.py" />
-    <entry file="file://$PROJECT_DIR$/Tf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Py.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/1412029153/builtins.py" />
     <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/rnn/translate/data_utils.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -775,14 +714,6 @@
       </provider>
     </entry>
     <entry file="file://D:/Python35/Lib/site-packages/tensorflow/python/ops/embedding_ops.py" />
-    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MNistLearn/Minist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -795,7 +726,7 @@
         <state relative-caret-position="315">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -806,30 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/RNNLearn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -846,6 +753,108 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Try/RowRNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/LSTM/Learn/RNNLearn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#26#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Py.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="1227" column="0" lean-forward="false" selection-start-line="1227" selection-start-column="0" selection-end-line="1227" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="914" column="4" lean-forward="false" selection-start-line="914" selection-start-column="4" selection-end-line="914" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MNistLearn/RNNMNist_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="e#365#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlowLearn/MNistLearn/MnistExpert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
           <folding />
         </state>
       </provider>

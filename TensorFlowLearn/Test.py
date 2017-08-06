@@ -1,4 +1,10 @@
 import numpy as np
+import tensorflow as tf
+
+a = tf.constant("Hello World!")
+b = tf.constant(123)
+
+print(tf.Session().run(b+a))
 
 # sigmoid function
 def nonlin(x,deriv=False):
@@ -41,11 +47,11 @@ for iter in xrange(10000):
 		print(syn0)
 
 
-print "Output After Training:"
-print l1
-
-l = [1,2,3,4,5]
-print(l[0:2])
+# print "Output After Training:"
+# print l1
+#
+# l = [1,2,3,4,5]
+# print(l[0:2])
 
 
 # fileName = "C:\\Users\\v-zhou\\simple-examples\\data\\ptb.train.txt"
