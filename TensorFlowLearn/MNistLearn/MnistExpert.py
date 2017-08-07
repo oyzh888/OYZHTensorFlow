@@ -26,7 +26,6 @@ def weight_variable(shape):
 
 def bias_variable(shape):
     initial = tf.constant(0.1, shape=shape)
-
     return tf.Variable(initial)
 def conv2d(x, W):
   return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding='SAME')
@@ -34,10 +33,6 @@ def conv2d(x, W):
 def max_pool_2x2(x):
   return tf.nn.max_pool(x, ksize=[1, 2, 2, 1],
                         strides=[1, 2, 2, 1], padding='SAME')
-
-W_conv1 = weight_variable([5])
-
-b_conv1 = bias_variable([32])
 
 W_conv1 = weight_variable([5, 5, 1, 32])
 b_conv1 = bias_variable([32])
@@ -73,7 +68,7 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 with tf.Session() as sess:
   sess.run(tf.global_variables_initializer())
-  for i in range(20000):
+  for i in range(5000):
     batch = mnist.train.next_batch(50)
     if i % 100 == 0:
       train_accuracy = accuracy.eval(feed_dict={

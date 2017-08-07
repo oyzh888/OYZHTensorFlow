@@ -52,8 +52,10 @@ def RNN(x, weights, biases):
     # Required shape: 'n_steps' tensors list of shape (batch_size, n_input)
 
     # Unstack to get a list of 'n_steps' tensors of shape (batch_size, n_input)
+    print(x)
+    print("-------------------------------------------------")
     x = tf.unstack(x, axis = 1)
-    # print()
+    print(x)
 
     # Define a lstm cell with tensorflow
     lstm_cell = rnn.BasicLSTMCell(n_hidden, forget_bias=1.0)
