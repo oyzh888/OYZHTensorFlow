@@ -10,31 +10,22 @@ from __future__ import print_function
 
 import tensorflow as tf
 from tensorflow.contrib import rnn
-
-# Import MNIST data
-from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
-
-'''
-To classify images using a recurrent neural network, we consider every image
-row as a sequence of pixels. Because MNIST image shape is 28*28px, we will then
-handle 28 sequences of 28 steps for every sample.
-'''
-
+inputData = [[1,2],[3,4],[5,6],[7,8],[9,10]]
+outputData = [11,22,33,44,55]
 # Parameters
 learning_rate = 0.001
-training_iters = 100000
-batch_size = 128
+training_iters = 1000
+batch_size = 1
 display_step = 10
 
 # Network Parameters
-n_input = 28  # MNIST data input (img shape: 28*28)
-n_steps = 28  # timesteps
+n_input = 2  # MNIST data input (img shape: 28*28)
+n_steps = 5
 n_hidden = 128  # hidden layer num of features
-n_classes = 10  # MNIST total classes (0-9 digits)
+n_classes = 5  # MNIST total classes (0-9 digits)
 
 # tf Graph input
-x = tf.placeholder(tf.float32, [None, n_input, n_steps])
+x = tf.placeholder(tf.float32, [None, n_input])
 y = tf.placeholder(tf.float32, [None, n_classes])
 # Define weights
 weights = {
@@ -61,6 +52,10 @@ def RNN(x, weights, biases):
     # Linear activation, using rnn inner loop last output
     return tf.matmul(outputs[-1], weights['out']) + biases['out']
 
+def next_batch():
+    x_batch = [[1,2],[3,4],[5,6],[7,8],[9,10]]
+    y_batch = [[1,0,0,0,0],[0,1,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,0,0,0,1]]
+    return x_batch, y_batch
 
 pred = RNN(x, weights, biases)
 
@@ -81,9 +76,9 @@ with tf.Session() as sess:
     step = 1
     # Keep training until reach max iterations
     while step * batch_size < training_iters:
-        batch_x, batch_y = mnist.train.next_batch(batch_size)
+        batch_x, batch_y = next_batch()
         # Reshape data to get 28 seq of 28 elements
-        batch_x = batch_x.reshape((batch_size, n_steps, n_input))
+        # batch_x = batch_x.reshape(( n_steps, n_input))
         # Run optimization op (backprop)
         sess.run(optimizer,{x:batch_x, y:batch_y})
         if step % display_step == 0:
@@ -99,6 +94,6 @@ with tf.Session() as sess:
 
     # Calculate accuracy for 128 mnist test images
     test_len = 128
-    test_data = mnist.test.images[:test_len].reshape((-1, n_steps, n_input))
-    test_label = mnist.test.labels[:test_len]
+    test_data = inputData
+    test_label = outputData
     print ("Testing Accuracy:",sess.run(accuracy, feed_dict={x: test_data, y: test_label}))

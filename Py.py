@@ -24,6 +24,7 @@ print(c)
 print("你好")
 
 list = ['runoob', 786, 2.23, 'john', 70.2]
+print(list[-1])
 tinylist = [123, 'john']
 del list[0]
 list.remove(786)
