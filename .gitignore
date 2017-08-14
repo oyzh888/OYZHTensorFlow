@@ -1,4 +1,4 @@
-/models
+﻿/models
 *.gz
 *.pyc
 *.xml
@@ -10,3 +10,4 @@ tmp/
 public/system/images/
 public/system/avatars/
 /.idea
+workspace.xml
