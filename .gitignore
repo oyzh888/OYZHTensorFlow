@@ -9,5 +9,4 @@ log/*.log
 tmp/
 public/system/images/
 public/system/avatars/
-/.idea
-workspace.xml
+**/.idea/workspace.xml
