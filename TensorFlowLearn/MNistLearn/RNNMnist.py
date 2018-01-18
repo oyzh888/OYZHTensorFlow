@@ -13,7 +13,7 @@ from tensorflow.contrib import rnn
 
 # Import MNIST data
 from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
+mnist = input_data.read_data_sets("MNIST_data", one_hot=True)
 
 '''
 To classify images using a recurrent neural network, we consider every image
@@ -24,7 +24,7 @@ handle 28 sequences of 28 steps for every sample.
 # Parameters
 learning_rate = 0.001
 training_iters = 100000
-batch_size = 128
+batch_size = 10
 display_step = 10
 
 # Network Parameters
@@ -88,7 +88,7 @@ with tf.Session() as sess:
         sess.run(optimizer,{x:batch_x, y:batch_y})
         if step % display_step == 0:
             # Calculate batch accuracy
-            acc = sess.run(accuracy, feed_dict={x: batch_x, y: batch_y})
+            acc, prediction = sess.run([accuracy,pred], feed_dict={x: batch_x, y: batch_y})
             # Calculate batch loss
             loss = sess.run(cost, feed_dict={x: batch_x, y: batch_y})
             print ("Iter " + str(step*batch_size) + ", Minibatch Loss= " + \
@@ -101,4 +101,4 @@ with tf.Session() as sess:
     test_len = 128
     test_data = mnist.test.images[:test_len].reshape((-1, n_steps, n_input))
     test_label = mnist.test.labels[:test_len]
-    print ("Testing Accuracy:",sess.run(accuracy, feed_dict={x: test_data, y: test_label}))
+    print ("Testing Accuracy and prediction::",sess.run([accuracy,pred], feed_dict={x: test_data, y: test_label}))

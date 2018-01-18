@@ -3,7 +3,11 @@ import tensorflow as tf
 
 a = tf.constant("Hello World!")
 b = tf.constant(123)
+vv =tf.Variable(1)
 
+print(vv)
+
+exit()
 print(tf.Session().run(b+a))
 
 # sigmoid function

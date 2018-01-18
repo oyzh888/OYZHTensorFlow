@@ -38,7 +38,7 @@ print (path[1:len(path)])
 
 sum = lambda x,y:x-y
 
-lll = [ len(list) for seq in list]
+lll = [len(list) for seq in list]
 print(111111111)
 print(lll)
 

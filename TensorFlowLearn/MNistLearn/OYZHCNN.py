@@ -5,22 +5,13 @@ import tensorflow as tf
 sess = tf.InteractiveSession()
 
 
-learning_rate = 1e-3
+learning_rate = 1e-4
 def rateChange():
     learning_rate = 1
 
 
 x = tf.placeholder("float", shape=[None, 784])
 y_ = tf.placeholder("float", shape=[None, 10])
-W = tf.Variable(tf.zeros([784,10]))
-b = tf.Variable(tf.zeros([10]))
-
-sess.run(tf.global_variables_initializer())
-y = tf.matmul(x,W) + b
-cross_entropy = tf.reduce_mean(
-    tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y))
-
-train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 # for _ in range(1000):
 #   batch = mnist.train.next_batch(100)
 #   train_step.run(feed_dict={x: batch[0], y_: batch[1]})
@@ -73,15 +64,26 @@ train_step = tf.train.AdamOptimizer(learning_rate).minimize(cross_entropy)
 correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
+loss_summary = tf.placeholder(tf.float32)
+acc_summary = tf.placeholder(tf.float32)
+log_dir = './TensorBoardLog'
+tf.summary.scalar('train_loss',loss_summary)
+tf.summary.scalar('train_accuracy',acc_summary)
+merged = tf.summary.merge_all()
+
 with tf.Session() as sess:
   sess.run(tf.global_variables_initializer())
-  for i in range(5000):
+  tf_board_writer = tf.summary.FileWriter(log_dir, sess.graph)
+  for i in range(500):
     batch = mnist.train.next_batch(50)
-    if i % 100 == 0:
-      train_accuracy = accuracy.eval(feed_dict={
-          x: batch[0], y_: batch[1], keep_prob: 1.0})
+    if i % 5 == 0:
+      # train_accuracy = accuracy.eval(feed_dict={
+      #     x: batch[0], y_: batch[1], keep_prob: 1.0})
+      train_accuracy, train_loss = sess.run([accuracy,cross_entropy],feed_dict={ x: batch[0], y_: batch[1], keep_prob: 1.0})
       print('step %d, training accuracy %g' % (i, train_accuracy))
     train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
+    tf_board_result = sess.run(merged, feed_dict={loss_summary: train_loss, acc_summary: train_accuracy})
+    tf_board_writer.add_summary(tf_board_result, i)
 
   print('test accuracy %g' % accuracy.eval(feed_dict={
       x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))

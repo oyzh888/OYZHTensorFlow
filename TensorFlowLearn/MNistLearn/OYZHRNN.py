@@ -9,6 +9,7 @@ Project: https://github.com/aymericdamien/TensorFlow-Examples/
 from __future__ import print_function
 
 import tensorflow as tf
+import numpy as np
 from tensorflow.contrib import rnn
 
 # Import MNIST data
@@ -23,9 +24,9 @@ handle 28 sequences of 28 steps for every sample.
 
 # Parameters
 learning_rate = 0.001
-training_iters = 20000
+training_iters = 50000
 batch_size = 128
-display_step = 10
+display_step = 1000
 
 # Network Parameters
 n_input = 28  # MNIST data input (img shape: 28*28)
@@ -34,9 +35,8 @@ n_hidden = 128  # hidden layer num of features
 n_classes = 10  # MNIST total classes (0-9 digits)
 
 # tf Graph input
-x = tf.placeholder("float", [None, n_steps, n_input])
-y = tf.placeholder("float", [None, n_classes])
-
+x = tf.placeholder(tf.float32, [None, n_input, n_steps])
+y = tf.placeholder(tf.float32, [None, n_classes])
 # Define weights
 weights = {
     'out': tf.Variable(tf.random_normal([n_hidden, n_classes]))
@@ -45,17 +45,13 @@ biases = {
     'out': tf.Variable(tf.random_normal([n_classes]))
 }
 
-
 def RNN(x, weights, biases):
     # Prepare data shape to match `rnn` function requirements
     # Current data input shape: (batch_size, n_steps, n_input)
     # Required shape: 'n_steps' tensors list of shape (batch_size, n_input)
 
     # Unstack to get a list of 'n_steps' tensors of shape (batch_size, n_input)
-    print(x)
-    print("-------------------------------------------------")
     x = tf.unstack(x, axis = 1)
-    print(x)
 
     # Define a lstm cell with tensorflow
     lstm_cell = rnn.BasicLSTMCell(n_hidden, forget_bias=1.0)
@@ -65,6 +61,8 @@ def RNN(x, weights, biases):
 
     # Linear activation, using rnn inner loop last output
     return tf.matmul(outputs[-1], weights['out']) + biases['out']
+    # x = tf.nn.softmax(tf.matmul(outputs[-1], weights['out']) + biases['out'])
+    # return x
 
 
 pred = RNN(x, weights, biases)
@@ -79,10 +77,18 @@ accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 # Initializing the variables
 init = tf.global_variables_initializer()
+loss_summary = tf.placeholder(tf.float32)
+acc_summary = tf.placeholder(tf.float32)
+log_dir = './TensorBoardLog'
+tf.summary.scalar('train_loss',loss_summary)
+tf.summary.scalar('train_accuracy',acc_summary)
+merged = tf.summary.merge_all()
+
 
 # Launch the graph
 with tf.Session() as sess:
     sess.run(init)
+    tf_board_writer = tf.summary.FileWriter(log_dir, sess.graph)
     step = 1
     # Keep training until reach max iterations
     while step * batch_size < training_iters:
@@ -90,15 +96,24 @@ with tf.Session() as sess:
         # Reshape data to get 28 seq of 28 elements
         batch_x = batch_x.reshape((batch_size, n_steps, n_input))
         # Run optimization op (backprop)
-        sess.run(optimizer, feed_dict={x: batch_x, y: batch_y})
+        sess.run(optimizer,{x:batch_x, y:batch_y})
         if step % display_step == 0:
             # Calculate batch accuracy
-            acc = sess.run(accuracy, feed_dict={x: batch_x, y: batch_y})
+            acc, prediction = sess.run([accuracy,pred], feed_dict={x: batch_x, y: batch_y})
+            print(prediction)
+            # print(tf.argmax(prediction,1))
+            print(np.argmax(prediction,1))
+            print(batch_y)
+            # print(tf.argmax(batch_y, 1))
+            print(np.argmax(batch_y, 1))
             # Calculate batch loss
             loss = sess.run(cost, feed_dict={x: batch_x, y: batch_y})
             print ("Iter " + str(step*batch_size) + ", Minibatch Loss= " + \
                   "{:.6f}".format(loss) + ", Training Accuracy= " + \
                   "{:.5f}".format(acc))
+            tf_board_result = sess.run(merged,feed_dict={loss_summary:loss,acc_summary:acc})
+            tf_board_writer.add_summary(tf_board_result, step)
+
         step += 1
     print ("Optimization Finished!")
 
@@ -106,4 +121,4 @@ with tf.Session() as sess:
     test_len = 128
     test_data = mnist.test.images[:test_len].reshape((-1, n_steps, n_input))
     test_label = mnist.test.labels[:test_len]
-    print ("Testing Accuracy:",sess.run(accuracy, feed_dict={x: test_data, y: test_label}))
+    print ("Testing Accuracy and prediction::",sess.run([accuracy,pred], feed_dict={x: test_data, y: test_label}))
