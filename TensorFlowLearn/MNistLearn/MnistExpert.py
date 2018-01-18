@@ -28,7 +28,7 @@ train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 """CNN"""
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev=0.1)
-    print(sess.run(initial))
+    # print(sess.run(initial))
     return tf.Variable(initial)
 
 def bias_variable(shape):
@@ -81,7 +81,7 @@ with tf.Session() as sess:
       train_accuracy = accuracy.eval(feed_dict={
           x: batch[0], y_: batch[1], keep_prob: 1.0})
       print('step %d, training accuracy %g' % (i, train_accuracy))
-    train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
+    train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.9})
 
   print('test accuracy %g' % accuracy.eval(feed_dict={
       x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))

@@ -1,22 +1,35 @@
-# import tensorflow as tf
-#
-# n_steps = 10
-# sess = tf.Session()
-#
-# arr = tf.constant([[1,2,3],[4,5,6]])
-# res = tf.unstack(arr, axis = 1)
-# sess.run(res)
-list = [ [['runoob'], [786], [2.23]],[[111],[222],[333],[444]]]
-print(list)
+from music21 import *
+from music21 import corpus
+# littleMelody = converter.parse("tinynotation: 3/4 c4 d8 f g16 a g f#")
+# littleMelody.show()
+# littleMelody.show('')
+import os
 
-# import tensorflow as tf
-# a = tf.constant([1,2,3])
-# b = tf.constant([4,5,6])
-# c = tf.stack([a,b],axis=1)
-# d = tf.unstack(c,3,axis=0)
-# e = tf.unstack(c,2,axis=1)
-# print(c.get_shape())
-# with tf.Session() as sess:
-#     print(sess.run(c))
-#     print(sess.run(d))
-#     print(sess.run(e))
+fp = os.path.join(common.getSourceFilePath(), 'midi', 'testPrimitive',  'test05.mid')
+mf = midi.MidiFile()
+mf.open(fp)
+mf.read()
+mf.close()
+
+print(type(mf))
+
+s = midi.translate.midiFilePathToStream('test05.mid')
+print(s.tracks)
+print( s.show("text") )
+
+
+
+
+# fp2 = mf.write('midi', fp2='pathToWhereYouWantToWriteIt.midi')
+# a = converter.parse('test05.midi')
+
+# littleMelody = converter.parse(mf)
+# littleMelody.show('midi')
+# mf.show('text')
+# print( len(mf.tracks) )
+#
+#
+# ks = key.KeySignature(2)
+# print(ks)
+# eventList = midi.translate.keySignatureToMidiEvents(ks)
+# print(eventList)
