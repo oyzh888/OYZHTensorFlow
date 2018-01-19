@@ -77,11 +77,17 @@ accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 # Initializing the variables
 init = tf.global_variables_initializer()
-loss_summary = tf.placeholder(tf.float32)
-acc_summary = tf.placeholder(tf.float32)
-log_dir = './TensorBoardLog'
-tf.summary.scalar('train_loss',loss_summary)
-tf.summary.scalar('train_accuracy',acc_summary)
+
+train_loss_ave = tf.placeholder(tf.float32)
+train_accuracy_ave = tf.placeholder(tf.float32)
+test_loss_ave = tf.placeholder(tf.float32)
+test_accuracy_ave = tf.placeholder(tf.float32)
+log_dir = './TB_RRRNN'
+tf.summary.scalar('train_loss', train_loss_ave)
+tf.summary.scalar('train_accuracy', train_accuracy_ave)
+tf.summary.scalar('test_loss', test_loss_ave)
+tf.summary.scalar('test_accuracy', test_accuracy_ave)
+
 merged = tf.summary.merge_all()
 
 
@@ -111,14 +117,18 @@ with tf.Session() as sess:
             print ("Iter " + str(step*batch_size) + ", Minibatch Loss= " + \
                   "{:.6f}".format(loss) + ", Training Accuracy= " + \
                   "{:.5f}".format(acc))
-            tf_board_result = sess.run(merged,feed_dict={loss_summary:loss,acc_summary:acc})
+
+            # Calculate accuracy for 128 mnist test images
+            test_len = 128
+            test_data = mnist.test.images[:test_len].reshape((-1, n_steps, n_input))
+            test_label = mnist.test.labels[:test_len]
+            test_acc, test_loss = sess.run([accuracy, pred], feed_dict={x: test_data, y: test_label})
+            print("Testing Accuracy and loss:",test_acc, test_loss)
+
+            tf_board_result = sess.run(merged,feed_dict={train_loss_ave:loss,train_accuracy_ave:acc,
+                                                         test_accuracy_ave: test_acc, test_loss_ave: test_loss})
             tf_board_writer.add_summary(tf_board_result, step)
 
         step += 1
     print ("Optimization Finished!")
 
-    # Calculate accuracy for 128 mnist test images
-    test_len = 128
-    test_data = mnist.test.images[:test_len].reshape((-1, n_steps, n_input))
-    test_label = mnist.test.labels[:test_len]
-    print ("Testing Accuracy and prediction::",sess.run([accuracy,pred], feed_dict={x: test_data, y: test_label}))
